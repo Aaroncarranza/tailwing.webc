@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio </title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'tech-blue': {
+                            900: '#1e3a8a', // Azul Oscuro (Navbar/Footer)
+                            800: '#1e40af', // Azul Principal (Botones/Títulos)
+                        },
+                        'accent-green': '#10b981', // Verde de Acento
+                    },
+                    fontFamily: {
+                        // Usando Inter como fuente base para un look moderno
+                        sans: ['Inter', 'sans-serif'], 
+                    },
+                }
+            }
+        }
+    </script>
+    <style>
+
+        .circle-img {
+            object-fit: cover;
+        }
+        .card-transition {
+            transition: all 0.3s ease-in-out;
+        }
+        .card-transition:hover {
+            transform: translateY(-4px); 
+        }
+    </style>
+</head>
+<body class="bg-gray-50 font-sans">
+
+        <nav class="bg-blue-800 text-white fixed top-0 left-0 w-full shadow-md z-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between h-16 items-center">
+        
+        <a href="inicio.html" class="text-xl font-bold">Portal de Tecnologías Emergentes</a>
+
+  
+        <div class="hidden md:flex space-x-6">
+          <a href="inicio.html" class="hover:text-gray-300">Inicio</a>
+          <a href="inteligenciaartificial.html" class="hover:text-gray-300">Inteligencia Artificial</a>
+          <a href="machinelearning.html" class="hover:text-gray-300">Machine Learning</a>
+          <a href="tecnologia.html" class="hover:text-gray-300">Tecnologías Emergentes</a>
+          <a href="contacto.html" class="hover:text-gray-300">Contacto</a>
+        </div>
+
+ 
+        <button id="menu-btn" class="md:hidden focus:outline-none">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+
+    <div id="mobile-menu" class="hidden md:hidden bg-blue-700 text-white px-4 py-3 space-y-2">
+      <a href="inicio.html" class="block hover:text-gray-300">Inicio</a>
+      <a href="inteligenciaartificial.html" class="block hover:text-gray-300">Inteligencia Artificial</a>
+      <a href="machinelearning.html" class="block hover:text-gray-300">Machine Learning</a>
+      <a href="tecnologia.html" class="block hover:text-gray-300">Tecnologías Emergentes</a>
+      <a href="contacto.html" class="block hover:text-gray-300">Contacto</a>
+    </div>
+  </nav>
+    
+    <main class="py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <section class="text-center mb-16">
+                <h1 class="text-5xl font-extrabold text-tech-blue-900 mb-4 tracking-tight">
+                    Bienvenidos a Nuestro Proyecto Tecnológico
+                </h1>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Este proyecto explora las principales áreas de la tecnología moderna, con un Inteligencia y especifico.
+                </p>
+            </section>
+
+            <section class="mb-16">
+                <div class="bg-white p-6 rounded-xl shadow-xl">
+                    <div class="aspect-w-16 aspect-h-9">
+                        <div class="relative pt-[56.25%]">
+                            <iframe class="absolute top-0 left-0 w-full h-full rounded-lg" src="https://www.youtube.com/embed/uvQydh-2zzo" frameborder="0" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="mb-16">
+                <h2 class="text-3xl font-bold text-center text-tech-blue-800 mb-10">Integrantes del Equipo Tailwind CSS</h2>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                    
+                    <div class="bg-white rounded-xl shadow-lg hover:shadow-2xl overflow-hidden card-transition">
+                        <div class="p-6 text-center">
+                            <img src="Integrantes/Quinlli.jpg" class="circle-img w-32 h-32 rounded-full mx-auto mb-4 border-4 border-tech-blue-800" alt="Foto Adrian">
+                            <h5 class="text-xl font-semibold text-gray-900 mb-1">Adrián Alexander Quinlli Betun</h5>
+                            <p class="text-sm text-gray-500 mb-3">19 años</p>
+                            <p class="text-sm text-gray-700">Estudiante de Desarrollo de Software. Actualmente trabaja como ayudante con sus padres.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-white rounded-xl shadow-lg hover:shadow-2xl overflow-hidden card-transition">
+                        <div class="p-6 text-center">
+                            <img src="Integrantes/Aaron.jpg" class="circle-img w-32 h-32 rounded-full mx-auto mb-4 border-4 border-tech-blue-800" alt="Foto Aaron">
+                            <h5 class="text-xl font-semibold text-gray-900 mb-1">Aaron Isaac Carranza Mite</h5>
+                            <p class="text-sm text-gray-500 mb-3">19 años</p>
+                            <p class="text-sm text-gray-700">Estudiante de Desarrollo de Software. Actualmente trabaja.</p>
+                        </div>
+                    </div>
+
+                    <div class="bg-white rounded-xl shadow-lg hover:shadow-2xl overflow-hidden card-transition">
+                        <div class="p-6 text-center">
+                            <img src="Integrantes/Erick.jpg" class="circle-img w-32 h-32 rounded-full mx-auto mb-4 border-4 border-tech-blue-800" alt="Foto Erick">
+                            <h5 class="text-xl font-semibold text-gray-900 mb-1">Erick Ismael Riquero Bermeo</h5>
+                            <p class="text-sm text-gray-500 mb-3">25 años</p>
+                            <p class="text-sm text-gray-700">Estudiante de Desarrollo de Software. Actualmente sin trabajo 😅.</p>
+                        </div>
+                    </div>
+
+                    <div class="bg-white rounded-xl shadow-lg hover:shadow-2xl overflow-hidden card-transition">
+                        <div class="p-6 text-center">
+                            <img src="Integrantes/Gordillo.jpg" class="circle-img w-32 h-32 rounded-full mx-auto mb-4 border-4 border-tech-blue-800" alt="Foto Aaron Ezequiel">
+                            <h5 class="text-xl font-semibold text-gray-900 mb-1">Aaron Ezequiel Gordillo Navarrete</h5>
+                            <p class="text-sm text-gray-500 mb-3">22 años</p>
+                            <p class="text-sm text-gray-700">Estudiante de Desarrollo de Software. Trabaja en el CC Malecón (diseñando).</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <section class="text-center pt-8">
+                <a href="contacto.html" class="inline-flex items-center justify-center px-8 py-3 border border-transparent text-base font-bold rounded-full shadow-lg text-white bg-tech-blue-800 hover:bg-tech-blue-900 transition duration-300 transform hover:scale-105">
+                    ¡Contáctanos Ahora!
+                </a>
+            </section>
+            
+        </div>
+    </main>
+
+    <footer class="bg-tech-blue-900 mt-12 py-6">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-sm text-gray-300">
+            &copy; 2025 Proyecto Tecnológico. Desarrollado por el Equipo Tailwind CSS.
+        </div>
+    </footer>
+    
+    <script>
+        document.getElementById('mobile-menu-button').addEventListener('click', function() {
+            this.classList.toggle('active');
+            const mobileMenu = document.getElementById('mobile-menu');
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>

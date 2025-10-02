@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tecnologías Emergentes </title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'tech-blue': {
+                            900: '#1e3a8a',
+                            800: '#1e40af',
+                        },
+                        'accent-green': '#10b981',
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+    <style>
+        .section-card {
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+        }
+        .section-card:hover {
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+            transition: all 0.3s ease;
+        }
+        #mobile-menu-button.active ~ #mobile-menu {
+            display: block;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 font-sans">
+
+        <nav class="bg-blue-800 text-white fixed top-0 left-0 w-full shadow-md z-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between h-16 items-center">
+        
+        <a href="inicio.html" class="text-xl font-bold">Portal de Tecnologías Emergentes</a>
+
+  
+        <div class="hidden md:flex space-x-6">
+          <a href="index.html" class="hover:text-gray-300">Inicio</a>
+          <a href="inteligenciaartificial.html" class="hover:text-gray-300">Inteligencia Artificial</a>
+          <a href="machinelearning.html" class="hover:text-gray-300">Machine Learning</a>
+          <a href="tecnologia.html" class="hover:text-gray-300">Tecnologías Emergentes</a>
+          <a href="contacto.html" class="hover:text-gray-300">Contacto</a>
+        </div>
+
+ 
+        <button id="menu-btn" class="md:hidden focus:outline-none">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+
+    <div id="mobile-menu" class="hidden md:hidden bg-blue-700 text-white px-4 py-3 space-y-2">
+      <a href="index.html" class="block hover:text-gray-300">Inicio</a>
+      <a href="inteligenciaartificial.html" class="block hover:text-gray-300">Inteligencia Artificial</a>
+      <a href="machinelearning.html" class="block hover:text-gray-300">Machine Learning</a>
+      <a href="tecnologia.html" class="block hover:text-gray-300">Tecnologías Emergentes</a>
+      <a href="contacto.html" class="block hover:text-gray-300">Contacto</a>
+    </div>
+  </nav>
+        <main class="py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
+            
+            <section class="text-center">
+                <h1 class="text-5xl font-extrabold text-tech-blue-900 mb-4 tracking-tight">Tecnologías Emergentes en 2025</h1>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Explora las innovaciones que están transformando el mundo actual.
+                </p>
+            </section>
+
+            <section id="introduccion" class="bg-white p-8 rounded-xl section-card">
+                <h2 class="text-3xl font-bold text-tech-blue-800 mb-6">Introducción</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+                    <div>
+                        <p class="text-lg text-gray-700 mb-4">Las tecnologías emergentes están redefiniendo nuestra forma de vivir, trabajar y relacionarnos. Avances como la inteligencia artificial autónoma, la computación cuántica y la biotecnología están marcando el rumbo del futuro.</p>
+                        <p class="text-gray-500 text-sm">El dominio de estas tecnologías es crucial para el crecimiento económico y el desarrollo social en la próxima década.</p>
+                    </div>
+                    <div>
+                        <div class="relative pt-[56.25%]">
+                            <iframe class="absolute top-0 left-0 w-full h-full rounded-lg shadow-md" src="https://www.youtube.com/embed/ONeSKIMSNjE" frameborder="0" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="principales-tecnologias">
+                <h2 class="text-3xl font-bold text-center text-tech-blue-800 mb-8">Principales Tecnologías Emergentes</h2>
+                <div class="space-y-4">
+                    
+                    <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition duration-300 flex items-center space-x-4 border-l-4 border-blue-500">
+                        <div class="flex-shrink-0 p-3 bg-blue-100 rounded-full text-blue-600">
+                            <svg class="h-8 w-8" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z" /></svg>
+                        </div>
+                        <div>
+                            <p class="text-xl font-bold text-gray-900">Inteligencia Artificial Autónoma</p>
+                            <p class="text-gray-600">Sistemas capaces de tomar decisiones complejas sin intervención humana.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition duration-300 flex items-center space-x-4 border-l-4 border-green-500">
+                        <div class="flex-shrink-0 p-3 bg-green-100 rounded-full text-green-600">
+                            <svg class="h-8 w-8" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 3h10a2 2 0 012 2v14a2 2 0 01-2 2H7a2 2 0 01-2-2V5a2 2 0 012-2z" /></svg>
+                        </div>
+                        <div>
+                            <p class="text-xl font-bold text-gray-900">Computación Cuántica</p>
+                            <p class="text-gray-600">Potencializa el procesamiento de datos a niveles sin precedentes para resolver problemas complejos.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition duration-300 flex items-center space-x-4 border-l-4 border-red-500">
+                        <div class="flex-shrink-0 p-3 bg-red-100 rounded-full text-red-600">
+                            <svg class="h-8 w-8" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+                        </div>
+                        <div>
+                            <p class="text-xl font-bold text-gray-900">Biotecnología Avanzada</p>
+                            <p class="text-gray-600">Innovaciones en edición genética y terapias celulares para la medicina personalizada.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="desafios" class="mb-12">
+                <h2 class="text-3xl font-bold text-center text-tech-blue-800 mb-8">Desafíos y Consideraciones Éticas</h2>
+                
+                <div class="space-y-4">
+                    <details class="bg-white rounded-xl shadow-lg hover:shadow-xl transition duration-300 group cursor-pointer" open>
+                        <summary class="flex justify-between items-center p-6 text-xl font-semibold text-yellow-700 hover:bg-yellow-50 rounded-t-xl transition duration-150">
+                            Riesgos y Privacidad
+                            <svg class="h-6 w-6 transform transition duration-200 group-open:rotate-180" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
+                        </summary>
+                        <div class="p-6 border-t border-gray-200 text-gray-700">
+                            <ul class="list-disc pl-5 space-y-2">
+                                <li>**Privacidad de Datos:** La recopilación masiva de datos personales requiere regulaciones estrictas.</li>
+                                <li>**Ciberseguridad:** Aumenta la vulnerabilidad a ciberataques debido a la dependencia tecnológica.</li>
+                            </ul>
+                        </div>
+                    </details>
+                    
+                    <details class="bg-white rounded-xl shadow-lg hover:shadow-xl transition duration-300 group cursor-pointer">
+                        <summary class="flex justify-between items-center p-6 text-xl font-semibold text-teal-700 hover:bg-teal-50 rounded-t-xl transition duration-150">
+                            Impacto Social
+                            <svg class="h-6 w-6 transform transition duration-200 group-open:rotate-180" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
+                        </summary>
+                        <div class="p-6 border-t border-gray-200 text-gray-700">
+                            <ul class="list-disc pl-5 space-y-2">
+                                <li>**Brecha Digital:** El acceso desigual puede ampliar la brecha social y económica.</li>
+                                <li>**Ética:** La toma de decisiones autónoma plantea preguntas sobre responsabilidad.</li>
+                            </ul>
+                        </div>
+                    </details>
+                </div>
+            </section>
+
+        </div>
+    </main>
+
+    <footer class="bg-tech-blue-900 mt-12 py-6">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-sm text-gray-300">
+            &copy; 2025 Tecnologías Emergentes. Proyecto del Equipo Tailwind CSS.
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('mobile-menu-button').addEventListener('click', function() {
+            this.classList.toggle('active');
+            const mobileMenu = document.getElementById('mobile-menu');
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>
